@@ -10,7 +10,7 @@ before_install:
   - 'cd vendor/Garmr && sudo python setup.py install && cd ../..'
   - 'cd vendor && wget https://github.com/nabla-c0d3/sslyze/releases/download/release-0.10/sslyze-0_10-linux64.zip && unzip sslyze-0_10-linux64.zip && cd ..'
   - 'cd vendor && wget http://downloads.sourceforge.net/project/dirb/dirb/2.03/dirb203.tar.gz && tar xvfz dirb203.tar.gz && cd dirb && ./configure && make && sudo cp dirb /usr/local/bin/ && cd ../../'
-  - export SSLYZE_PATH="$TRAVIS_BUILD_DIR/vendor/sslyze-0_10-linux64/sslyze.py"
+  - export SSLYZE_PATH="$TRAVIS_BUILD_DIR/vendor/sslyze/sslyze.py"
   - export SQLMAP_PATH="$TRAVIS_BUILD_DIR/vendor/sqlmap/sqlmap.py"
   - export DIRB_WORDLISTS="$TRAVIS_BUILD_DIR/vendor/dirb/wordlists"
 
