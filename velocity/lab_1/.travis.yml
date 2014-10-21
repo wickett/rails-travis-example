@@ -6,8 +6,8 @@ before_install:
   - sudo apt-get install nmap
   - sudo apt-get install wget
   - sudo apt-get install libcurl4-openssl-dev
-  - 'cd vendor && wget https://github.com/iSECPartners/sslyze/releases/download/release-0.9/sslyze-0_9-linux64.zip && unzip sslyze-0_9-linux64.zip && cd ..'
-  - export SSLYZE_PATH="$TRAVIS_BUILD_DIR/vendor/sslyze-0_9-linux64/sslyze.py"
+  - 'cd vendor && wget https://github.com/nabla-c0d3/sslyze/releases/download/release-0.10/sslyze-0_10-linux64.zip && unzip sslyze-0_9-linux64.zip && cd ..'
+  - export SSLYZE_PATH="$TRAVIS_BUILD_DIR/vendor/sslyze-0_10-linux64/sslyze.py"
 before_script:
   - ./set_token.sh
   - bundle exec rake db:migrate
