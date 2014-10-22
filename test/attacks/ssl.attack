@@ -13,6 +13,6 @@ Scenario: Ensure no anonymous certificates
     python <sslyze> --heartbleed <hostname>:443
     """
   Then the output should match:
-    """ 
-    OpenSSL Heartbleed:\s+NOT vulnerable
+    """
+    OK - Not vulnerable to Heartbleed
     """
